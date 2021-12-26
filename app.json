@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "spysee",
+    "slug": "spysee",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "jonkolmanllc.spysee"
+    },
+    "ios": {
+      "bundleIdentifier": "jonkolmanllc.spysee"
+    }
+  },
+  "name": "spysee"
+}
