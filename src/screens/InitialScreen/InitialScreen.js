@@ -4,7 +4,7 @@ import { ImageBackground, SafeAreaView } from 'react-native';
 import imagePath from '../../constants/imagePath';
 import colors from '../../styles/colors';
 //reusable components
-import BtnComp from '../../Components/BtnComp';
+import BtnComp from '../../components/BtnComp';
 import navigationStrings from '../../constants/navigationStrings';
 import strings from '../../constants/lang';
 

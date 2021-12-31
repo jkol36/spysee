@@ -36,4 +36,9 @@ export default StyleSheet.create({
     fontFamily: fontFamily.medium,
     textTransform: 'uppercase'
   },
+  textMuted: {
+    fontSize: textScale(8),
+    fontFamily: fontFamily.regular,
+    color: colors.grey,
+  }
 })

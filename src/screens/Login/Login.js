@@ -5,10 +5,10 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import strings from '../../constants/lang';
 import styles from './styles';
 //reusable components
-import Header from '../../Components/Header';
-import TextInputWithLabel from '../../Components/TextInputWithLabel';
-import WrapperContainer from '../../Components/WrapperContainer';
-import BtnComp from '../../Components/BtnComp';
+import Header from '../../components/Header';
+import TextInputWithLabel from '../../components/TextInputWithLabel';
+import WrapperContainer from '../../components/WrapperContainer';
+import BtnComp from '../../components/BtnComp';
 import colors from '../../styles/colors';
 import actions from '../../redux/actions';
 
