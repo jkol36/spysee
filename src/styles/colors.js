@@ -10,5 +10,12 @@ export default {
   blackOpacity20: 'rgba(0,0,0,0.2)',
   blackOpacity30: 'rgba(0,0,0,0.3)',
   blackOpacity40: 'rgba(0,0,0,0.4)',
-  blackOpacity50: 'rgba(0,0,0,0.5)'
+  blackOpacity50: 'rgba(0,0,0,0.5)',
+  primary: '#000014',
+  black: '#efeff1',
+  gray: '#7f7f8b',
+  tag: '#323235',
+  green: '#14b866',
+  red: '#ec1414',
+  purple: '#bf94ff'
 }

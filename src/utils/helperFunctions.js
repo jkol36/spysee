@@ -2,6 +2,8 @@ import axios from "axios";
 import { GOOGLE_MAP_KEY } from "../constants";
 
 export const getUri = status => {
+  console.log('sttus', status)
+  console.log(typeof status)
   switch(status) {
     case 0: {
       return 'https://lh3.googleusercontent.com/proxy/wAFwebQ2pKm-cDc0xh1mJF3iolyuWaFpcfUX7Hu9_2aoo_YsXzcsnQeA_uydbUkb9oecmaYZRlt0vETc3O3PHLfVOm0CLChsjQFZa8386QapyO6NAl8g9714pPE9gPaf2fZBq1fpAFrZhfHIvu2CWkCo64qwOQIvn9YTCB7r1zVZj4lAnWhodRwAPGFQxppP'
@@ -12,6 +14,8 @@ export const getUri = status => {
     case 2: {
       return 'https://www.pngfind.com/pngs/m/180-1807233_location-dot-grey-grey-colour-circle-png-transparent.png'
     }
+    default:
+      return ''
   }
 }
 
@@ -19,14 +23,17 @@ export const getStatusText = (status, name) => {
   console.log('got status', status)
   switch(status) {
     case 0: {
-      return `ask ${name} to stream`
+      return `offline`
     }
     case 1: {
       
-      return `${name} is currently offline`
+      return `online`
     }
     case 2: {
-      return `${name} is away`
+      return `away`
+    }
+    case 3: {
+      return 'streaming'
     }
   }
 

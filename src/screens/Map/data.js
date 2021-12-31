@@ -1,4 +1,13 @@
 import imagePath from "../../constants/imagePath";
+import { DateTime, Interval } from 'luxon';
+
+export const statusMapper = {
+    0: 'offline',
+    1: 'online',
+    2: 'away',
+    3: 'streaming'
+
+}
 
 export const data = [
     {
@@ -11,7 +20,10 @@ export const data = [
         },
         img: imagePath.emoji1,
         name: 'Jessica',
-        status: 0 //offline
+        status: 3, //streaming
+        streaming: true,
+        lastStreamDate: DateTime.now().setZone('America/New_York').minus({weeks: 1}).toLocaleString(DateTime.DATETIME_MED)
+
     },
     {
         id: 1,
@@ -23,7 +35,11 @@ export const data = [
         },
         img: imagePath.emoji2,
         name: 'Eli',
-        status: 1 // offline
+        status: 0,
+        streaming: false,
+        lastStreamDate: DateTime.now().setZone('America/New_York').minus({days: 1}).toLocaleString(DateTime.DATETIME_MED)
+
+
     },
     {
         id: 3,
@@ -35,30 +51,11 @@ export const data = [
         },
         img: imagePath.emoji3,
         name: 'jkol36',
-        status: 1
+        status: 3,
+        streaming: true,
+        lastStreamDate: DateTime.now().setZone('America/New_York').toLocaleString(DateTime.DATETIME_MED)
+
+
     },
-    {
-        id: 4,
-        coords: {
-            latitude: 30.8406,
-            longitude: 76.9584,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-        },
-        img: imagePath.emoji4,
-        name: 'Jon Kolman',
-        status: 2 // online
-    },
-    {
-        id: 0,
-        coords: {
-            latitude: 39.986855,
-            longitude: -75.196442,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-        },
-        img: imagePath.emoji5,
-        name: 'Danny',
-        status: 2
-    },
+    
 ]
